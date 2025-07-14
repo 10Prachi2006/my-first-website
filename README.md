@@ -1,2 +1,3 @@
 # my-first-website
-Little Lemon Website
+Little Lemon Website using React, HTML, JS, CSS
+
