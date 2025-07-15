@@ -1,0 +1,75 @@
+/* src/pages/ConfirmedBooking.css */
+.confirmed-booking-container {
+  padding: 5rem 2rem;
+  max-width: 600px;
+  margin: 4rem auto;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 250px); /* Adjust based on header/footer height */
+}
+
+.confirmed-booking-title {
+  color: var(--color-primary-green);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.confirmed-booking-message {
+  color: var(--color-dark-text);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.confirmed-booking-details {
+  color: var(--color-dark-text);
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.back-home-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--color-lemon-yellow);
+  color: var(--color-dark-text);
+  border: none;
+  border-radius: 8px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-home-button:hover {
+  background-color: #e0be0c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .confirmed-booking-container {
+    padding: 3rem 1.5rem;
+    margin: 2rem auto;
+  }
+  .confirmed-booking-title {
+    font-size: 2.5rem;
+  }
+  .confirmed-booking-message {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .confirmed-booking-container {
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+  }
+  .confirmed-booking-title {
+    font-size: 2rem;
+  }
+}

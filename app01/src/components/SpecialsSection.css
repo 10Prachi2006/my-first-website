@@ -1,0 +1,45 @@
+/* src/components/SpecialsSection.css */
+.specials-section {
+  padding: 4rem 0;
+  background-color: var(--color-light-grey);
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.specials-header h2 {
+  margin: 0;
+  color: var(--color-dark-text);
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 913;
+
+}
+
+.specials-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 2rem; /* Space between cards */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .specials-header {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .specials-section {
+    padding: 2rem 0;
+  }
+  .specials-header {
+    padding: 0 1rem; /* Adjust header padding for very small screens */
+  }
+}

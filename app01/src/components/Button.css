@@ -1,0 +1,46 @@
+/* src/components/Button.css */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 8px; /* Rounded corners for buttons */
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  text-decoration: none; /* For when it's rendered as an anchor tag */
+
+}
+
+/* Primary Button Style (Yellow) */
+.button.primary {
+  background-color: var(--color-lemon-yellow);
+  color: var(--color-dark-text);
+}
+
+.button.primary:hover {
+  background-color: #e0be0c; /* Slightly darker yellow on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Secondary Button Style (e.g., for Online Menu) */
+.button.secondary {
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+}
+
+.button.secondary:hover {
+  background-color: #3b4e47; /* Slightly darker green on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add more button types if needed (e.g., ghost, outline) */
+
+@media (max-width: 768px) {
+  .button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+  }
+}

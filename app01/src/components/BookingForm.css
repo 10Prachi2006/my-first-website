@@ -1,0 +1,84 @@
+/* src/components/BookingForm.css */
+.booking-form {
+  display: grid;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  gap: 20px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--color-dark-text);
+}
+
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--color-dark-text);
+  background-color: var(--color-light-gray);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--color-lemon-yellow);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(244, 206, 20, 0.2);
+}
+
+.submit-button {
+  padding: 12px 20px;
+  background-color: var(--color-lemon-yellow);
+  color: var(--color-dark-text);
+  border: none;
+  border-radius: 8px;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #e0be0c;
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* src/components/BookingForm.css (Additions) */
+
+.error-message {
+  color: #d32f2f; /* A common red for errors */
+  font-size: 0.85rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.submit-button:disabled {
+  background-color: #cccccc; /* Greyed out */
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: translateY(0); /* Prevent hover effect when disabled */
+}
+
+.submit-button:disabled:hover {
+  background-color: #cccccc; /* Maintain grey on hover */
+  box-shadow: none;
+}

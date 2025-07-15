@@ -1,0 +1,18 @@
+/* src/App.css */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App main {
+  flex-grow: 1; /* Makes main take up available space */
+  padding: 20px;
+}
+
+/* Basic styling for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Markazi Text', serif; /* Example font */
+    color: var(--color-primary-green);
+    margin-bottom: 0.5em;
+}

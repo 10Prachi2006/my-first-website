@@ -1,0 +1,29 @@
+/* src/components/Header.css */
+.header {
+  background-color: var(--color-white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  position: sticky; /* Makes header sticky */
+  top: 0;
+  z-index: 100; /* Ensures header is on top of other content */
+}
+
+.header-logo img {
+  height: 50px; /* Specific height for the logo */
+  width: auto;
+  border-radius: 0; /* No border-radius for logo */
+  box-shadow: none; /* No shadow for logo */
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .header-logo {
+    margin-bottom: 1rem;
+  }
+}

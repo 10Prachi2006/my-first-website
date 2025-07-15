@@ -1,0 +1,97 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: var(--color-light-grey);
+  /* Light grey background */
+  padding: 3rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--color-dark-text);
+  margin-top: auto;
+  /* Pushes footer to the bottom */
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  /* Adjust column sizes */
+  gap: 2rem;
+}
+
+.footer-logo img {
+  width: 100%;
+  /* Adjust logo size */
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 9px 14px 15px 25px;
+}
+
+.footer-section h4 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--color-dark-green);
+  /* Section titles in green */
+  padding: 33px 15px 6px 51px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0px 11px 15px 53px;  
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a,
+.footer-section ul li address {
+  color: var(--color-dark-text);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-style: normal;
+  /* For address tag */
+}
+
+.footer-section ul li a:hover {
+  color: var(--color-dark-green);
+}
+
+/* Responsive adjustments for Footer */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns on medium screens */
+  }
+
+  .footer-logo {
+    grid-column: span 2;
+    /* Logo spans two columns */
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    /* Stack all sections on small screens */
+    text-align: center;
+  }
+
+  .footer-logo {
+    grid-column: span 1;
+    margin-bottom: 1rem;
+  }
+
+  .footer-section ul {
+    align-items: center;
+    /* Center list items */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 0;
+  }
+}

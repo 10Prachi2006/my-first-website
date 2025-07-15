@@ -1,0 +1,30 @@
+/* src/index.css */
+:root {
+  --color-primary-green: #495E57;
+  --color-lemon-yellow: #F4CE14;
+  --color-dark-text: #333333;
+  --color-light-gray: #EDEFEE;
+  --color-white: #FFFFFF;
+  --color-highlight-pink: #EE9972;
+  /* Example, if needed */
+}
+
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  /* Example font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-light-gray);
+  color: var(--color-dark-text);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,36 @@
+/* src/components/Nav.css */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem; /* Space between navigation items */
+}
+
+.main-nav ul li a {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-dark-text); /* Nav links are dark text on white header */
+  padding: 0.5rem 0.8rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.main-nav ul li a:hover {
+  color: var(--color-dark-green); /* Text color changes on hover */
+  background-color: var(--color-light-grey); /* Subtle background on hover */
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .main-nav ul li a {
+    font-size: 1.1rem; /* Slightly larger on mobile for touch */
+    padding: 0.6rem 1rem;
+  }
+}

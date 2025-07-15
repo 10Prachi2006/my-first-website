@@ -1,0 +1,142 @@
+/* src/components/AboutSection.css */
+.about-section {
+  padding: 4rem 0;
+  background-color: var(--color-dark-green);
+  /* Dark Green background */
+  color: var(--color-white);
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Vertically center content */
+  gap: 3rem;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-text h2,
+.about-text h3 {
+  color: var(--color-primary-green);
+  /* Yellow headings */
+  margin-top: 0;
+  font-size: 5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  /* Specific size for About h3 */
+  margin-top: -1.5rem;
+  /* Pull h3 closer to h2 */
+}
+
+.about-text p {
+  color: black;
+  /* Light grey paragraph text */
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.about-images {
+  flex: 0 0 auto;
+  width: 400px;
+  /* Fixed width for images container */
+  height: 400px;
+  /* Fixed height for images container */
+}
+
+.about-images img {
+  width: 250px;
+  /* Size of individual images */
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.about-images .image-top {
+  top: 0;
+  right: 0;
+}
+
+.about-images .image-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+/* Responsive adjustments for About Section */
+@media (max-width: 1024px) {
+  .about-content {
+    gap: 2rem;
+  }
+
+  .about-images {
+    width: 350px;
+    height: 350px;
+  }
+
+  .about-images img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-text h2,
+  .about-text h3 {
+    text-align: center;
+  }
+
+  .about-images {
+    /* position: static; Remove absolute positioning */
+    width: 100%;
+    /* Take full width */
+    height: auto;
+    /* Adjust height dynamically */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* Allow images to wrap */
+  }
+
+  .about-images img {
+
+    width: 313px;
+    height: 165px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 2rem 0;
+  }
+
+  .about-images img {
+    width: 80%;
+    /* Stack images vertically on very small screens */
+    height: 200px;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+}
