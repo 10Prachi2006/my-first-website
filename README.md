@@ -39,6 +39,10 @@ A Front-end developer capstone project. This project showcases a responsive and 
 Follow these steps to get your development environment set up:
 
 **1. Clone the repository:**
-git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
-cd your-repository-name
+git clone https://github.com/10Prachi2006/my-first-website
+cd my-first-website
+
+
+AUTHOR
+Prachi Yadav.
 
