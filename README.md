@@ -6,16 +6,25 @@
 <img width="1349" height="1192" alt="Screenshot 2025-07-15 at 13-35-56 Little Lemon" src="https://github.com/user-attachments/assets/d9abbd90-2fc1-4a01-bb27-f62ffacabe02" />
 
 
+
+
 Little Lemon Website using React, HTML, JS, CSS....
-A Front-end developer capstone project. This project showcases a responsive and interactive website for table reservation at the fictional Little Lemon Restaurant, built using React.js.
+A Front-end developer capstone project. 
+This project showcases a responsive and interactive website for table reservation at the fictional Little Lemon Restaurant, built using React.js.
 
 
 
 
+
+
+
+-----------------------------------------------------------------------------------------
 
 
 
 ⚙️ Tech Stack
+
+
 
  **Frontend:**  HTML5, CSS3, JavaScript (ES6+), React.js, Tailwind CSS
 
@@ -24,25 +33,52 @@ A Front-end developer capstone project. This project showcases a responsive and 
 
 
 
+
+
+-----------------------------------------------------------------------------------------
+
+
 📦 Third Party Libraries & APIs
 
+
+
  **Frontend Libraries:**
-    * [React Router](https://reactrouter.com/): For declarative routing in React applications.
-    * Meta Front-End Table-Booking API – Simulated API for booking functionality.
+    [React Router](https://reactrouter.com/):   For declarative routing in React applications.
+    Meta Front-End Table-Booking API – Simulated API for booking functionality.
 
 
 
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------
 
 
 🛠️ Installation & Running
 
+
+
 Follow these steps to get your development environment set up:
+
+
 
 **1. Clone the repository:**
 git clone https://github.com/10Prachi2006/my-first-website
 cd my-first-website
 
 
-AUTHOR
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+
+AUTHOR 
+
+
 Prachi Yadav.
 
